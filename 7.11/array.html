@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr = ["Banana", "Orange", "Apple", "Mango"];
+        var arr1=[4,8,6];
+        arr.push("Kiwi");
+        console.log(arr);
+        console.log(arr.pop());
+        console.log(arr);
+        console.log(arr.shift());
+        console.log(arr);
+        console.log(arr.unshift("yyy"));
+        console.log(arr);
+        console.log(arr.splice(2,2,"pink"));
+        console.log(arr);
+        console.log(arr.splice(2,1,"Apple","Mango"));
+        console.log(arr);
+        console.log(arr.join("/"));
+        console.log(arr.slice(1,2));
+        console.log(arr.concat(arr1,[7,8,9]));
+        console.log(arr.indexOf("a"));
+        console.log(arr.indexOf("Orange"));
+        console.log(arr.lastIndexOf("Orange"));
+        console.log(arr1.sort());
+        var arr3=[1,5,6,99,52,663,22,66,552,6,622];
+        arr3.forEach(function(value,index){
+            console.log(index,value)
+        })
+        var newArr =arr3.filter(function(value,index){
+            return value>100;
+        })
+        console.log(newArr);
+        var end = arr1.map((value,index)=>value-1);
+        console.log(end);
+        var end1=arr1.some(function(value,index){
+            return value<6;
+        });
+        console.log(end1);
+        var end2=arr1.some(function(value,index){
+            return value<9;
+        });
+        console.log(end2);
+        console.log(arr1.reverse());
+        var arr5={length:2,0:'aaa',1:'bbb'};  
+        console.log(Array.from(arr5));
+        console.log(Array.of());
+        console.log(Array.of(1, 2));
+        console.log(arr.includes("Orange"));
+        console.log(arr.sort(()=>Math.random()-0.5));
+        console.log(arr.sort(()=>Math.random()-0.5));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

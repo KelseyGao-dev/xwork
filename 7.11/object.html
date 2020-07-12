@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    //Object.assign(obj1,obj2,obj3,...)
+        // var obj1={name:'张三'};
+        // var obj2={age:18};
+        // var obj3={say:function(){
+        //     console.log('说话');
+        // }}
+        // console.log(Object.assign(obj1,obj2,obj3));
+        // console.log(obj1);
+        // console.log(obj1,obj2);
+        // var obj = {name: '张三', age: 20};
+        // var newObj = Object.assign({},obj);
+        // console.log(obj);
+    //Object.is(a,b);
+        // console.log(Object.is(+0,-0));
+        // console.log(Object.is(NaN,NaN));
+    //obj.prototype.isPrototypeOf(b);
+        // function a(){
+        // }
+        // var b = new a();
+        // console.log(a.prototype.isPrototypeOf(b));  
+    //Object.defineProperty()
+        // var obj = new Object();
+        // Object.defineProperty(obj, 'name', {value: '张三'})
+        // console.log(obj.name);
+    //Object.defineProperties()
+        // var obj = new Object();
+        //     Object.defineProperties(obj, {
+        //         name: {
+        //             value: '张三',
+        //             configurable: false,
+        //             writable: true,
+        //             enumerable: true
+        //         },
+        //         age: {
+        //             value: 18,
+        //             configurable: true
+        //         }
+        //     })
+        //     console.log(obj.name, obj.age);
+        //     console.log(obj);
+    //Object.freeze(obj)
+        // var obj={name:'张三',age:18};
+        // Object.freeze(obj);
+        // obj.name='李四';
+        // obj.sex='男';
+        // console.log(obj);
+    //for in
+        // var obj={
+        //     name:'小米',
+        //     age:18,
+        //     say:function(){
+        //         console.log('你好');
+        //     }
+        // }
+        // for (var i in obj) {
+        //     console.log(obj[i]);
+        // }
+    //Object.keys(obj)
+        var obj = {'a':'123','b':'345'};
+        // console.log(Object.keys(obj)); 
+        // var obj1 = { 100: "a", 2: "b", 7: "c"};
+        // console.log(Object.keys(obj1));
+        // var obj2 = Object.create({}, { getFoo : { value : function () { return this.foo } } });
+        // obj2.foo = 1;
+        // console.log(Object.keys(obj2));
+    //Object.getOwnPropertyNames(obj);
+        console.log(Object.getOwnPropertyNames(obj));
+    //Object.getOwnPropertySymbols(obj);
+        console.log(Object.getOwnPropertySymbols(obj));
+    //Reflect.ownKeys(obj);
+        console.log(Reflect.ownKeys(obj));
+    //Object.values(obj)
+        console.log(Object.values(obj));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

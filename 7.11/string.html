@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //字符串的长度
+        var str="Hello world";
+        console.log(str.length);
+        console.log(str.charAt(1));
+        console.log(str.charCodeAt(1));
+        console.log(String.fromCharCode(101));
+        console.log(str.indexOf('a'));
+        console.log(str.indexOf('o'));
+        console.log(str.lastIndexOf('o'));
+        console.log(str.replace('o','a'));
+        console.log(str);
+        console.log(str.slice(5,8));
+        console.log(str.slice(5));
+        console.log(str.slice(-2));
+        console.log(str.substring(5));
+        console.log(str.substring(-1));
+        console.log(str.substr(6,3));
+        console.log(str.split('o'));
+        console.log(str.toLowerCase());
+        console.log(str.toUpperCase());
+        console.log(str.match('o'));
+        a=" hello";
+        b=" world";
+        c=" miao";
+        console.log(str.concat(a,c,b));
+        'abc'.padStart(10);
+        'abc'.padStart(10, "123");
+        'abc'.padStart(6,"123465");
+        'abc'.padStart(8, "0");
+        'abc'.padStart(1); 
+        'abc'.padEnd(10);
+        'abc'.padEnd(10, "123");
+        'abc'.padEnd(6,"123465"); 
+        'abc'.padEnd(8, "0");
+        'abc'.padEnd(1);
+        var time = new Date();
+        var h = String(time.getHours()).padStart(2,'0');
+        var m = String(time.getMinutes()).padStart(2,'0');
+        var s = String(time.getSeconds()).padStart(2,'0');
+        console.log(`${h}:${m}:${s}`);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
