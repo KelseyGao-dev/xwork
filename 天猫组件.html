@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<style>
+    .box{
+        width: 462px;
+        height: 282px;
+        margin-top: 200px;
+    }
+    .title{
+        width: 100%;
+        height: 57px;
+        background: #ccc;
+    }
+    .title a{
+        text-decoration-line: none;
+        float: left;
+        list-style: none;
+        width: 50%;
+        height: 100%;
+        line-height: 57px;
+        text-align: center;
+        color: #000;
+    }
+    .con{
+        width: 462px;
+        height: 225px;
+        overflow: hidden;
+    }
+    .con-list{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 57px;
+    }
+    .con-list div{
+        background-image: url(https://img.alicdn.com/tfs/TB1AnTXewMPMeJjy1XcXXXpppXa-290-87.png);
+        width: 291px;height: 87px;position:absolute;left: 10px; top:350px;
+    }
+    
+</style>
+<body>
+    <div class="box">
+        <div class="title">
+            <a href="javascript:;" style="background: #00b262;">今日疯抢</a>
+            <a href="javascript:;">量贩装</a>
+        </div>
+        <div class="con">
+            <div class="con-list">
+                <div>
+                    <h2 style="text-align: left; margin-left:26px;margin-top:-5px; color: #00b262;">零食欢乐购</h2>
+                    <h4 style="text-align: left; margin-left:26px;margin-top:-45px;">爆款直降</h4>
+                </div>
+                <img src="https://img.alicdn.com/tfs/TB1_O_LgSrqK1RjSZK9XXXyypXa-400-400.jpg" style="width:200px;height:200px;margin: 10px 30px 0 0; float: right;" alt="">
+            </div>
+            <div class="con2-list">
+                <div>
+                    <h2 style="text-align: left; margin-left:26px;margin-top:-5px; color: #00b262;">爆款直降</h2>
+                    <h4 style="text-align: left; margin-left:26px;margin-top:-45px;">粮油调味</h4>
+                </div>
+                <img src="https://img.alicdn.com/tfs/TB1jNScP6TpK1RjSZKPXXa3UpXa-400-400.jpg" style="width:200px;height:200px;margin: 10px 30px 0 0; float: right;" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        var one=document.querySelectorAll(".title a");
+        var two=document.querySelectorAll(".con-list");
+        two[1].style.display="none";
+        for(let i=0;i<one.length;i++){
+            one[i].onmouseover=function(){
+                    for(var j=0;j<two.length;j++){
+                        two[j].style.display="none";
+                        one[j].style.background="none";
+                        one[j].style.color="#000"
+                    }
+                    two[i].style.display="block";
+                    one[i].style.color="#fff"
+                    this.style.background="#00b262";
+            }
+            
+        }
+        var j=0
+        setInterval(function(){
+            if(j%2==0){
+                two[1].style.display="block";
+                one[1].style.background="#00b262";
+                one[1].style.color="#fff"
+                two[0].style.display="none";
+                one[0].style.background="#ccc";
+                one[0].style.color="#000"
+            }
+                else{
+                two[0].style.display="block";
+                one[0].style.background="#00b262";
+                one[0].style.color="#fff"
+                two[1].style.display="none";
+                one[1].style.background="#ccc";
+                one[1].style.color="#000"
+                }
+                
+                j++;
+                console.log(j)
+            }, 2000);
+        
+    </script>
+</body>
+</html>
