@@ -1,7 +1,28 @@
 $(document).ready(function(){ /* 加载完页面执行 */
-    $("#flip").click(function(){ /* 当点击id为flip时 */
-        $("#panel").slideToggle("slow"); /* 执行上下滑动的效果 */
-    });
+    $("#ppimg1").mouseenter(function () { 
+        $("#ppimg1").css({"width":"496px","height:":"400px","transition":"all 2s","height":"332px"});
+    })
+    $("#ppimg1").mouseleave(function () { 
+        $("#ppimg1").css({"width":"248px","height:":"400px","transition":"all 2s","height":"166px"});
+    })
+    $("#ppimg2").mouseenter(function () { 
+        $("#ppimg2").css({"width":"496px","height:":"400px","transition":"all 2s","height":"332px"});
+    })
+    $("#ppimg2").mouseleave(function () { 
+        $("#ppimg2").css({"width":"248px","height:":"400px","transition":"all 2s","height":"166px"});
+    })
+    $("#ppimg3").mouseenter(function () { 
+        $("#ppimg3").css({"width":"496px","height:":"400px","transition":"all 2s","height":"332px"});
+    })
+    $("#ppimg3").mouseleave(function () { 
+        $("#ppimg3").css({"width":"248px","height:":"400px","transition":"all 2s","height":"166px"});
+    })
+    $("#ppimg4").mouseenter(function () { 
+        $("#ppimg4").css({"width":"496px","height:":"400px","transition":"all 2s","height":"332px"});
+    })
+    $("#ppimg4").mouseleave(function () { 
+        $("#ppimg4").css({"width":"248px","height:":"400px","transition":"all 2s","height":"166px"});
+    })
     $(document).scroll(function () {
         if ($(document).scrollTop()>=500) {
             $('#nav_1').css({"position":"fixed","z-index":"9999","top":"0"})
