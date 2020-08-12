@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul>li{
+    list-style: none;
+}
+img{
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+.shouye{
+    font-size: 14px;
+    color: #dbdbdb;
+    display: inline;
+    margin-left: 2rem;
+}
+.xia{
+    color: #dbdbdb;
+    cursor: pointer;
+}
+.banner{
+    width: 100%;
+    height: 322px;
+}
+.xgbg{
+    background: #f2f2f2;
+}
+.Underline{
+    border: 1px solid #e2e2e2;
+}
+.xgt{
+    margin: 0 auto;
+}
+.xgtitle{
+    color: #808080;
+    text-align: center;
+}
+.xgtext{
+    color: #aaa;
+    font-size: 12px;
+}
+.numup{
+    width: 184px;
+}
+.num{
+    font-size: 28px;
+    font-weight: normal;
+    font-style: normal;
+    color: #aaaaaa;
+    display: block;
+    padding: 0 0 5px 0;
+    text-align: center;
+}
+.num_text{
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    color: #c1c1c1;
+    display: block;
+    text-align: center;
+}
+.textarea1{
+    width: 100%;
+    height: 68px;
+    border: 1px solid rgb(214, 214, 214);
+}
+.bd_title{
+    font-size: 16px;
+    color: #696969;
+}
+.bd_text{
+    font-size: 13px;
+    color: rgb(136, 136, 136);
+}
+.input1{
+    width: 360px;
+    height: 44px;
+    border: 1px solid rgb(214, 214, 214);
+}
+.foot{
+    color: #606060;
+    font-size: 12px;
+    text-align: center;
+}
+#panel,#flip{
+	padding:6px;
+	text-align:center;
+	background-color:#000;
+	border:solid 1px #606060;
+}
+#panel{
+	padding:10px;
+	display:none;
+}
