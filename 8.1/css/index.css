@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul>li{
+    list-style: none;
+}
+img{
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+.banner{
+    width: 100%;
+    height: 536px;
+}
+.banner1_text{
+    right: 15% !important;
+    bottom: 130px !important;
+    left: 15% !important;
+}
+.banner1_text_title{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-weight: 900;
+}
+.banner1_text_text{
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+}
+.banner1_text_btn{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    border: 1px solid #fff;
+    padding: 10px 40px;
+    margin-top: 20px;
+}
+.banner2_text{
+    right: 15% !important;
+    bottom: 230px !important;
+    left: 15% !important;
+}
+.banner2_text_title{
+    color: black;
+    font-size: 50px;
+    font-weight: 900;
+}
+.banner2_text_text{
+    color: black;
+    font-size: 22px;
+    font-weight: 900;
+}
+.Production_project{
+    font-size: 24px;
+}
+.ppimg{
+    width: 248px;
+    height: 166px;
+}
+.understand{
+    text-align: center;
+}
+.bg_grey{
+    background: #f2f2f2;
+}
+.Underline{
+    border: 1px solid #e2e2e2;
+}
+.xgt{
+    margin: 0 auto;
+}
+.xgtitle{
+    text-align: center;
+    font-size: 18px;
+    color: #808080;
+}
+.xgtxt{
+    color: #808080;
+    font-size: 16px;
+    text-align: center;
+}
+.xgtext{
+    width: 250px;
+    color: #aaa;
+    font-size: 12px;
+}
+.numup{
+    width: 300px;
+}
+.num{
+    font-size: 28px;
+    font-weight: normal;
+    font-style: normal;
+    color: #aaaaaa;
+    display: block;
+    padding: 0 0 5px 0;
+    text-align: center;
+}
+.num_text{
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    color: #c1c1c1;
+    display: block;
+    text-align: center;
+}
+.tsimg{
+    width: 100px;
+    height: 30px;
+}
+.input1{
+    width: 360px;
+    height: 44px;
+    border: 1px solid rgb(214, 214, 214);
+}
+.textarea1{
+    width: 726px;
+    height: 68px;
+    border: 1px solid rgb(214, 214, 214);
+}
+.bd_title{
+    font-size: 16px;
+    color: #696969;
+}
+.bd_text{
+    font-size: 13px;
+    color: rgb(136, 136, 136);
+}
+.foot{
+    color: #606060;
+    font-size: 12px;
+    text-align: center;
+    height: 0px;
+    /* margin-top: 0; */ 
+}
